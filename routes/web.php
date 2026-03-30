@@ -25,4 +25,6 @@ Route::prefix('books')->name('books.')->middleware('auth')->group(function () {
     Route::put('/{book}/delete', [BooksController::class, 'destroy'])->name('destroy');
 
 });
+
+
 // Route::resource('books', BooksController::class);
